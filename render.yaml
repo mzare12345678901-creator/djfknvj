@@ -1,0 +1,22 @@
+
+services:
+  - type: web
+    name: bale-ai-video
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: BALE_BOT_TOKEN
+        sync: false
+      - key: ADMIN_CHAT_ID
+        sync: false
+      - key: SOURCE_CHANNEL
+        value: "@viiideoai"
+      - key: DESTINATION_CHANNEL
+        sync: false
+      - key: AIMLAPI_KEY
+        sync: false
+      - key: AIMLAPI_BASE_URL
+        value: "https://api.aimlapi.com/v1"
+      - key: AIMLAPI_MODEL
+        value: "google/gemini-2.5-flash"

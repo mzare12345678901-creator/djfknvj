@@ -1,0 +1,8 @@
+
+Use this key to access https://aimlapi.com
+
+Name: 12345678901
+
+API key: bf751be0f71269ae1b94e02785a15708
+
+How to start: https://docs.aimlapi.com/quickstart/setting-up
